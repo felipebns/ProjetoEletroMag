@@ -1,0 +1,5 @@
+Voltagem necessária para o mouse:
+1.2 - 1.5 V
+
+
+PROBLEMAS: RENDIMENTO DE 140% EM PARALELO!!!!!!!!!!!
