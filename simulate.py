@@ -71,8 +71,8 @@ class Simulation():
         i1, i2 = i[0], i[1]
 
         v2_s = self.Rc*i2
-        Psaida = (v2_s*np.conj(i2))/2
-        Pentrada = (Uf*np.conj(i1))/2
+        Psaida = np.real((v2_s*np.conj(i2))/2)
+        Pentrada = np.real((Uf*np.conj(i1))/2)
         rendimento = Psaida/Pentrada
 
         return abs(v2_s), rendimento*100
@@ -93,8 +93,9 @@ class Simulation():
         i1, i2 = i[0], i[1]
 
         v2_p = Zcarga*i2
-        Psaida = (v2_p*np.conj(i2))/2
-        Pentrada = (Uf*np.conj(i1))/2
+        ic = (XC*i2)/(XRc+XC)
+        Psaida = np.real((v2_p*np.conj(ic))/2)
+        Pentrada = np.real((Uf*np.conj(i1))/2)
         rendimento = Psaida/Pentrada
 
         return abs(v2_p), rendimento*100
