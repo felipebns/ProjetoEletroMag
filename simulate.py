@@ -7,7 +7,7 @@ class Simulation():
 
     def __init__(self, Rc, Rdc, k, Uf):
         self.lista_freq = np.arange(0,100e3,10)
-        self.lista_capac = [150e-9, 0.1e-6, 0.47e-6, 1e-6, 4.7e-9]
+        self.lista_capac = [150e-9, 0.1e-6, 0.47e-6, 1e-6, 4.7e-6]
         self.colors = ['b','g','r','c','m']
         self.Rc = Rc
         self.Rdc = Rdc
@@ -146,3 +146,5 @@ class Simulation():
 
     def run(self) -> None:
         self.plot()
+
+        
