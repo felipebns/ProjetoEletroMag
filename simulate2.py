@@ -7,6 +7,7 @@ class Simulation2():
 
     def __init__(self, C, L1, L2, Rint1, Rint2, Uf):
         self.colors = ['b','g','r','c','m', 'royalblue', 'slategrey', 'plum']
+        # self.colors = ['r']
         self.C = C
         self.L1 = L1
         self.L2 = L2
@@ -14,6 +15,7 @@ class Simulation2():
         self.Rint2 = Rint2
         self.Uf = Uf*(2/np.pi) #eficaz quadrada
         self.lista_rc = [5, 10, 15, 20, 25, 30, 35, 40]
+        # self.lista_rc = [100]
         self.lista_k = np.arange(0,0.5,0.01)
 
     def valida_saida(self) -> dict:
@@ -70,7 +72,7 @@ class Simulation2():
         lines_1, labels_1 = ax1.get_legend_handles_labels()
         lines_2, labels_2 = ax2.get_legend_handles_labels()
         ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc='upper right')
-        plt.show()
+        # plt.show()
 
         return freq_maior_pico
                 
@@ -213,5 +215,5 @@ class Simulation2():
         ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc='upper right')
 
     def run(self) -> None:
-        self.valida_saida()
-        # self.plot()
+        # self.valida_saida()
+        self.plot()

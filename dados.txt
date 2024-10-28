@@ -1,5 +1,5 @@
-Voltagem necessária para o mouse:
+Voltagem necessária para carregar a bateria do mouse:
 1.2 - 1.5 V
 
-
-PROBLEMAS: RENDIMENTO DE 140% EM PARALELO!!!!!!!!!!!
+Frequência idealizada:
+51000 Hz
